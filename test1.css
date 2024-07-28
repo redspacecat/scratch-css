@@ -1,3 +1,16 @@
+:root {
+  --main-color: #2586db;
+}
+
 #navigation {
-  background-color: #2586db;
+  background-color: var(--main-color);
+}
+
+#a {
+  color var(--main-color)
+}
+
+
+#a:hover {
+  color var(--main-color)
 }
