@@ -1879,10 +1879,10 @@
     padding:.75em 1.5em
 }
 .outer .categories li:hover{
-    background-color:rgba(133,92,214,.25)
+    background-color:rgba(92, 131, 214, 0.25)
 }
 .outer .categories li.active:hover{
-    background-color:#7854c0
+    background-color:var(--main-color)
 }
 .outer #projectBox{
     background-color:#f2f2f2;

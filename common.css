@@ -108,7 +108,7 @@ a:active {
 }
 a:hover {
     text-decoration:none;
-    color:#7854c0
+    color:var(--hovered-link-color)
 }
 .empty {
     border:1px solid rgba(0,0,0,.1);
