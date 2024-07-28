@@ -3,7 +3,7 @@
     margin:.5em 0;
     border:0;
     border-radius:.5rem;
-    background-color:#2586db;
+    background-color:var(--main-color);
     cursor:pointer;
     padding:1em 1.25em;
     color:#fff;
@@ -15,7 +15,7 @@
 }
 .button.white{
     background-color:#fff;
-    color:#2586db
+    color:var(--main-color)
 }
 .button.pass{
     background-color:#328554
@@ -104,7 +104,7 @@
 .input:focus{
     transition:all .5s ease;
     outline:none;
-    border:1px solid #2586db
+    border:1px solid var(--main-color)
 }
 .input.fail{
     border:1px solid #c40
@@ -177,7 +177,7 @@
     right:0;
     border:1px solid rgba(0,0,0,.1);
     border-radius:0 0 5px 5px;
-    background-color:#2586db;
+    background-color:var(--main-color);
     padding:10px;
     min-width:9rem;
     max-width:16.25rem;
@@ -231,7 +231,7 @@
     border-top:1px solid rgba(0,0,0,.1);
     border-left:1px solid rgba(0,0,0,.1);
     border-radius:5px;
-    background-color:#2586db;
+    background-color:var(--main-color);
     width:14px;
     height:14px;
     content:""
@@ -553,7 +553,7 @@
     z-index:10;
     border-bottom:1px solid rgba(0,0,0,.1);
     box-shadow:0 0 3px rgba(0,0,0,.25);
-    background-color:#2586db;
+    background-color:var(--main-color);
     width:100%;
     height:50px
 }
@@ -1056,7 +1056,7 @@
 }
 .select select:focus{
     outline:none;
-    border:1px solid #2586db
+    border:1px solid var(--main-color)
 }
 .select select:-moz-focusring{
     text-shadow:0 0 0 #575e75;
@@ -1866,13 +1866,13 @@
     justify-content:flex-start
 }
 .outer .categories li{
-    border:1px solid #2586db;
+    border:1px solid var(--main-color);
     background-color:#fff;
-    color:#2586db
+    color:var(--main-color)
 }
 .outer .categories li.active{
     opacity:1;
-    background-color:#2586db;
+    background-color:var(--main-color);
     color:#fff
 }
 .outer .categories li:active{

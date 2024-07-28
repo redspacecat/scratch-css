@@ -1,5 +1,5 @@
 :root {
-  --main-color: #2586db;
+  --main-color: var(--main-color);
 }
 
 #navigation {
