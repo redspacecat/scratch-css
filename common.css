@@ -97,7 +97,7 @@ strong {
 }
 a {
     cursor:pointer;
-    color:#2586db;
+    color:var(--main-color);
     font-weight:bold
 }
 a:link,
