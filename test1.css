@@ -6,11 +6,10 @@
   background-color: var(--main-color);
 }
 
-#a {
+a {
   color: var(--main-color);
 }
 
-
-#a:hover {
+a:hover {
   color: var(--main-color);
 }
