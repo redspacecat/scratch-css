@@ -1,0 +1,5 @@
+/* Change the "--main-color" variable to change the main site color */
+
+:root {
+    --main-color: #4c97ff;
+}
