@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Styles
 // @namespace    github.com/redspacecat
-// @version      2024-07-28
+// @version      0.2
 // @description  Change scratch css
 // @author       redspacecat
 // @match        https://scratch.mit.edu/*
