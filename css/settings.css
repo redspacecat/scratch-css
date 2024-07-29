@@ -2,5 +2,6 @@
 
 :root {
     --main-color: #4c97ff;
+    --main-color-transparent-35: hsla(215, 100%, 65%, 0.35);
     --hovered-link-color: #3875ca;
 }

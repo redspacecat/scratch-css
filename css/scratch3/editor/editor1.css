@@ -1,0 +1,227 @@
+/* make sure to keep these in sync with other constants,
+e.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */
+
+/* layout contants from `layout-constants.js` */
+
+/* #E5F0FF */
+
+/* #E9F1FC */
+
+/* #D9E3F2 */
+
+/* 90% transparent version of motion-primary */
+
+/* #FFFFFF */
+
+/* 25% transparent version of ui-white */
+
+/* 25% transparent version of ui-white */
+
+/* 25% transparent version of ui-white */
+
+/* 15% transparent version of black */
+
+/* #575E75 */
+
+/* #4C97FF */
+
+/* #3373CC */
+
+/* #855CD6 */
+
+/* 35% transparent version of looks-tertiary */
+
+/* 15% transparent version of looks-tertiary */
+
+/* #714EB6 */
+
+/* #FF661A */
+
+/* #E64D00 */
+
+/* #CF63CF */
+
+/* #BD42BD */
+
+/* #FFAB19 */
+
+/* #FF8C1A */
+
+/* #0FBD8C */
+
+/* #0FBD8C */
+
+/* #0B8E69 */
+
+/* #FF8C1A */
+
+/* #FFB366 */
+
+/* #FF8C1A */
+
+/* #0FBD8C */
+
+/* #0B8E69 */
+
+/* 35% transparent version of extensions-primary */
+
+/* opaque version of extensions-transparent, on white bg */
+
+/* lighter than motion-primary */
+
+/* @todo: refactor this class name, and component: `sprite-selector` to `sprite` */
+
+.sprite-selector-item_sprite-selector-item_kQm-i {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: hsla(225, 15%, 40%, 1);
+    border-width: 2px;
+    border-style: solid;
+    border-color: hsla(0, 0%, 0%, 0.15);
+    border-radius: 0.5rem;
+
+    text-align: center;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+
+       -moz-user-select: none;
+
+        -ms-user-select: none;
+
+            user-select: none;
+}
+
+.sprite-selector-item_sprite-selector-item_kQm-i.sprite-selector-item_is-selected_24tQj {
+    -webkit-box-shadow: 0px 0px 0px 4px var(--main-color-transparent-35);
+            box-shadow: 0px 0px 0px 4px var(--main-color-transparent-35);
+    border: 2px solid var(--main-color);
+    background: hsla(0, 100%, 100%, 1);
+}
+
+.sprite-selector-item_sprite-selector-item_kQm-i:hover {
+    border: 2px solid hsla(260, 60%, 60%, 1);
+    background: hsla(0, 100%, 100%, 1);
+}
+
+.sprite-selector-item_sprite-selector-item_kQm-i:hover .sprite-selector-item_sprite-image_2QWuK, .sprite-selector-item_is-selected_24tQj .sprite-selector-item_sprite-image_2QWuK {
+    -webkit-filter: drop-shadow(0px 0px 2px  hsla(0, 0%, 0%, 0.15));
+            filter: drop-shadow(0px 0px 2px  hsla(0, 0%, 0%, 0.15));
+}
+
+/* Outer/Inner chicanery is to prevent layouts when sprite image changes */
+
+.sprite-selector-item_sprite-image-outer_Xs0wN {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+.sprite-selector-item_sprite-image-inner_3oSwi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.sprite-selector-item_sprite-image_2QWuK {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.sprite-selector-item_sprite-info_-I0i_ {
+    padding: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+
+    font-size: 0.625rem;
+    color: hsla(225, 15%, 40%, 1);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.sprite-selector-item_sprite-name_1PXjh, .sprite-selector-item_sprite-details_2UVpA {
+    /*
+        For truncating overflowing text gracefully
+        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text
+    */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.sprite-selector-item_sprite-details_2UVpA {
+    margin-top: 0.125rem;
+    font-size: 0.5rem;
+}
+
+.sprite-selector-item_is-selected_24tQj .sprite-selector-item_sprite-info_-I0i_ {
+    background: hsla(260, 60%, 60%, 1);
+    color: hsla(0, 100%, 100%, 1);
+}
+
+.sprite-selector-item_delete-button_1rkFW {
+    position: absolute;
+    top: -.625rem;
+    z-index: auto;
+}
+
+[dir="ltr"] .sprite-selector-item_delete-button_1rkFW {
+    right: -.625rem;
+}
+
+[dir="rtl"] .sprite-selector-item_delete-button_1rkFW {
+    left: -.625rem;
+}
+
+.sprite-selector-item_number_AnXUk {
+    position: absolute;
+    top: 0.15rem;
+    font-size: 0.625rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+[dir="ltr"] .sprite-selector-item_number_AnXUk {
+    left: 0.15rem;
+}
+
+[dir="rtl"] .sprite-selector-item_number_AnXUk {
+    right: 0.15rem;
+}
