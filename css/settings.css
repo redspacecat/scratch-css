@@ -1,4 +1,5 @@
 /* Change the "--main-color" variable to change the main site color */
+/* Change the "--hovered-link-color" variable to change the secondary (darker) site color */
 
 :root {
     /* --main-color: #4c97ff; */
