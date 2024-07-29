@@ -1,5 +1,10 @@
 /* created by @redspacecat */
 
-.menu-bar_main-menu_3wjWH,  .menu-bar_account-info-group_MeJZP, .gui_extension-button-container_b4rCs {
+.menu-bar_main-menu_3wjWH,  .menu-bar_account-info-group_MeJZP {
     background-color: var(--main-color);
+}
+
+.gui_extension-button-container_b4rCs {
+    /* background-color: var(--main-color); */
+    background: var(--main-color);
 }
