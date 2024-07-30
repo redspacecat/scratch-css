@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Styles
 // @namespace    github.com/redspacecat
-// @version      0.2
+// @version      0.3
 // @description  Change scratch css
 // @author       redspacecat
 // @match        https://scratch.mit.edu/*
@@ -27,9 +27,23 @@ function urlHas(string) {
     return window.location.href.includes(string)
 }
 
+function standard() {
+    addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/normalize.min.css")
+    addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/common.css")
+}
+
+function isSupportedScratch3Page() {
+    for (let i = 0; i < variousScratch3Pages.length; i++) {
+        if (urlHas(variousScratch3Pages[i])) {
+            return true
+        }
+    }
+}
+
 addSheet("https://redspacecat.github.io/scratch-css/css/settings.css")
 
 let scratch2pages = ["users", "discuss", "mystuff", "cloudmonitor", "accounts"]
+let variousScratch3Pages = ["parents", "educators", "developers", "credits", "faq", "download", "contact", "terms", "privacy", "cookies", "DMCA", "ideas", "about"]
 let isScratch2 = false
 
 for (let i = 0; i < scratch2pages.length; i++) {
@@ -40,29 +54,35 @@ for (let i = 0; i < scratch2pages.length; i++) {
 
 if (!isScratch2) {
 
-    addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/normalize.min.css")
-    addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/common.css")
-
     if (urlHas("explore")) {
+        standard()
         addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/explore.css")
     } else {
         if (urlHas("projects") & (!(urlHas("search")))) {
+            standard()
             addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/projects.css")
             addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/editor.css")
         } else {
             if (urlHas("messages")) {
+                standard()
                 addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/messages.css")
             } else {
                 if (urlHas("community_guidelines")) {
+                    standard()
                     addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/guidelines.css")
                 } else {
                     if (urlHas("studios")) {
+                        standard()
                         addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/studio.css")
                     } else {
                         if (urlHas("search")) {
+                            standard()
                             addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/search.css")
                         } else {
-                            addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/splash.css")
+                            if (isSupportedScratch3Page() || window.location.pathname == "/") {
+                                standard()
+                                addSheet("https://redspacecat.github.io/scratch-css/css/scratch3/splash.css")
+                            }
                         }
                     }
                 }
