@@ -35,7 +35,7 @@ html,
 body {
     display:block;
     margin:0;
-    background-color:var(--main-color);
+    background-color:var(--scratch3-main-color);
     padding:0;
     color:#575e75;
     font-family:"Helvetica Neue","Helvetica",Arial,sans-serif
@@ -97,18 +97,18 @@ strong {
 }
 a {
     cursor:pointer;
-    color:var(--main-color);
+    color:var(--scratch3-main-color);
     font-weight:bold
 }
 a:link,
 a:visited,
 a:active {
     text-decoration:none;
-    color:var(--main-color)
+    color:var(--scratch3-main-color)
 }
 a:hover {
     text-decoration:none;
-    color:var(--hovered-link-color)
+    color:var(--scratch3-dark-color)
 }
 .empty {
     border:1px solid rgba(0,0,0,.1);
@@ -136,7 +136,7 @@ p {
     font-weight:normal
 }
 input {
-    outline-color:var(--main-color)
+    outline-color:var(--scratch3-main-color)
 }
 ::selection {
     background-color:rgba(77,151,255,.25)

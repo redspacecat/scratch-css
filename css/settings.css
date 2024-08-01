@@ -1,12 +1,12 @@
-/* Change the "--main-color" variable to change the main site color */
-/* Change the "--hovered-link-color" variable to change the secondary (darker) site color */
+/* Change the "--scratch3-main-color" variable to change the main site color */
+/* Change the "--scratch3-dark-color" variable to change the secondary (darker) site color */
 
 :root {
-    --main-color: #4c97ff;
-    --hovered-link-color: #3875ca;
+    --scratch3-main-color: #4c97ff;
+    --scratch3-dark-color: #3875ca;
     --scratch2-main-color: #0f8bc0;
     --scratch2-dark-color: #0c6185;
     
-/*     --main-color: #3869b5; */
-/*     --hovered-link-color: #244e8d; */
+/*     --scratch3-main-color: #3869b5; */
+/*     --scratch3-dark-color: #244e8d; */
 }
